@@ -7,23 +7,24 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 import matplotlib.animation as animation
 from psutil import cpu_percent,net_io_counters,virtual_memory, disk_io_counters
 import matplotlib
+import pathlib
 
 #  Backgrounds:
-BACKGROUND_MAIN_TASK_MANGER = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\main_TM.png"
-BACKGROUND_MAIN = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\main.png"
-BACKGROUND_CPU = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\cpu_background.png"
-BACKGROUND_RAM = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\ram_background.png"
-BACKGROUND_STORAGE = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\storage_background.png"
-BACKGROUND_NETWORK = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\network_background.png"
+BACKGROUND_MAIN_TASK_MANGER = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "main_TM.png"
+BACKGROUND_MAIN = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "main.png"
+BACKGROUND_CPU = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "cpu_background.png"
+BACKGROUND_RAM = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "ram_background.png"
+BACKGROUND_STORAGE = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "storage_background.png"
+BACKGROUND_NETWORK = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "network_background.png"
 
 #  Buttons:
-BUTTON_START = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\start.png"
-BUTTON_CPU = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\cpu.png"
-BUTTON_RAM = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\ram.png"
-BUTTON_STORAGE = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\storage.png"
-BUTTON_NETWORK = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\network.png"
-BUTTON_BACK = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\back.png"
-BUTTON_HOME = r"C:\Users\almog\Python_Advanced_Course\TaskManger\pictures\home.png"
+BUTTON_START = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "start.png"
+BUTTON_CPU = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "cpu.png"
+BUTTON_RAM = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "ram.png"
+BUTTON_STORAGE = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "storage.png"
+BUTTON_NETWORK = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "network.png"
+BUTTON_BACK = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "back.png"
+BUTTON_HOME = str(pathlib.Path(__file__).parent.resolve()) + "\\photos\\" + "home.png"
 
 # Create basic window.
 Root = tk.Tk()
